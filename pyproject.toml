@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "simple-fastapi-boilerplate"
+version = "0.1.0"
+description = "Simple FastAPI Boilerplate"
+authors = [""]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+uvicorn = "^0.18.3"
+fastapi = "^0.81.0"
+gunicorn = "^20.1.0"
+pythondi = "^1.2.4"
+ujson = "^5.4.0"
+click = "^8.1.3"
+
+[tool.poetry.dev-dependencies]
+behave = "^1.2.6"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
