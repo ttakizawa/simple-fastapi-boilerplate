@@ -1,0 +1,23 @@
+version: '3.7'
+
+services:
+  api:
+    build:
+      context: .
+      dockerfile: docker/api/Dockerfile
+    platform: linux/x86_64
+    container_name: api
+    hostname: api
+    ports:
+      - '8000:8000'
+    tty: true
+    volumes:
+      - ./:/home
+
+  # infrastructure:
+  #   build:
+  #     context: .
+  #     dockerfile: docker/infrastructure/Dockerfile
+  #   tty: true
+  #   volumes:
+  #     - $PWD/infrastructure:/terraform
